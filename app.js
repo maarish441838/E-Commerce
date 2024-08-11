@@ -21,7 +21,7 @@ const MongoStore = require('connect-mongo');
 mongoose.set("strictQuery", true);
 mongoose
   .connect(
-    "mongodb+srv://maarish441:4iVJmgI4lKtgoiIw@cluster0.upgjo.mongodb.net/shop"
+    "mongodb+srv://maarish441:bSvJpa0AdGWnVF3V@cluster0.mjbak.mongodb.net/shop"
   )
   .then(() => {
     console.log("DB connected");
