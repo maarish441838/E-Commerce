@@ -17,6 +17,8 @@ const User = require("./models/User"); //pass
 const MongoStore = require('connect-mongo');
 
 
+mongoose.set('bufferCommands', false);
+
 mongoose.set("strictQuery", true);
 mongoose
   .connect(
@@ -31,6 +33,8 @@ mongoose
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+
+
 // now for public folder
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
