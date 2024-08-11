@@ -40,7 +40,7 @@ app.use(methodOverride("_method"));
 // seedDB();
 let store = MongoStore.create({
   secret:"keyboard cat",
-  // mongoUrl: dbURL,
+  mongoUrl: "mongodb+srv://maarish441:4iVJmgI4lKtgoiIw@cluster0.upgjo.mongodb.net/shop" ,
   touchAfter:24*60*60
 })
 
