@@ -14,7 +14,7 @@ const productApi = require("./routes/api/productapi"); //api
 const passport = require("passport"); //pass
 const LocalStrategy = require("passport-local"); //pass
 const User = require("./models/User"); //pass
-const MongoStore = require('connect-mongo');
+// const MongoStore = require('connect-mongo');
 
 
 
@@ -41,11 +41,11 @@ app.use(methodOverride("_method"));
 
 // seeding dummy data
 // seedDB();
-let store = MongoStore.create({
-  secret:"keyboard cat",
-  mongoUrl: "mongodb+srv://maarish441:4iVJmgI4lKtgoiIw@cluster0.upgjo.mongodb.net/shop" ,
-  touchAfter:24*60*60
-})
+// let store = MongoStore.create({
+//   secret:"keyboard cat",
+//   mongoUrl: "mongodb+srv://maarish441:4iVJmgI4lKtgoiIw@cluster0.upgjo.mongodb.net/shop" ,
+//   touchAfter:24*60*60
+// })
 
 let configSession = {
   secret: "keyboard cat",
