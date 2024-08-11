@@ -17,7 +17,6 @@ const User = require("./models/User"); //pass
 const MongoStore = require('connect-mongo');
 
 
-mongoose.set('bufferCommands', false);
 
 mongoose.set("strictQuery", true);
 mongoose
