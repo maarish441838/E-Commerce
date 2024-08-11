@@ -14,6 +14,8 @@ const productApi = require("./routes/api/productapi"); //api
 const passport = require("passport"); //pass
 const LocalStrategy = require("passport-local"); //pass
 const User = require("./models/User"); //pass
+const MongoStore = require('connect-mongo');
+
 
 mongoose.set("strictQuery", true);
 mongoose
@@ -36,6 +38,11 @@ app.use(methodOverride("_method"));
 
 // seeding dummy data
 // seedDB();
+let store = MongoStore.create({
+  secret:"keyboard cat",
+  mongoUrl: dbURL,
+  touchAfter:24*60*60
+})
 
 let configSession = {
   secret: "keyboard cat",
