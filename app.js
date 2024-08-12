@@ -21,7 +21,7 @@ const User = require("./models/User"); //pass
 mongoose.set("strictQuery", true);
 mongoose
   .connect(
-    "mongodb+srv://maarish441:bSvJpa0AdGWnVF3V@cluster0.mjbak.mongodb.net/shop"
+    "mongodb+srv://maarish441:Aarish%4012@cluster0.amy8i.mongodb.net/Shopify?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => {
     console.log("DB connected");
@@ -88,7 +88,7 @@ app.use(authRoutes);
 app.use(cartRoutes);
 app.use(productApi);
 
-const PORT = 8080;
+const PORT = 8000;
 app.listen(PORT, () => {
   console.log(`server connected at port : ${PORT}`);
 });
