@@ -88,7 +88,7 @@ app.use(authRoutes);
 app.use(cartRoutes);
 app.use(productApi);
 
-const port = 8080;
-app.listen(port, () => {
-  console.log(`server connected at port : ${port}`);
+const PORT = 8080;
+app.listen(PORT, () => {
+  console.log(`server connected at port : ${PORT}`);
 });
